@@ -1,0 +1,64 @@
+version: "3.9"
+services:
+  
+  mongodb:
+    image: mongo:4.2
+    container_name: carontecar-mongodb
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=${MONGODB_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGODB_PASSWORD}
+      - MONGODB_USERNAME=${MONGODB_USERNAME}
+      - MONGODB_PASSWORD=${MONGODB_PASSWORD}
+      - MONGODB_DATABASE=${MONGODB_DATABASE}
+    volumes:
+      - ${DATA_PATH_HOST}/mongodb:/data/db
+    expose:
+      - 27017
+    ports:
+      - 27017:27017
+
+  mongo-express:
+    image: mongo-express:0.54.0
+    container_name: carontecar-mongo-express
+    environment:
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=${MONGODB_USERNAME}
+      - ME_CONFIG_MONGODB_ADMINPASSWORD=${MONGODB_PASSWORD}
+      - ME_CONFIG_MONGODB_SERVER=mongodb
+    depends_on:
+      - mongodb
+    expose:
+      - 8081
+
+  api:
+    image: node:16-alpine
+    container_name: carontecars-api
+    privileged: true
+    env_file:
+      - .env
+    volumes:
+      - ${DATA_PATH_HOST}/docker/certs:/certs
+      - ../backend:/app
+    working_dir: /app
+    command: sh -c "npm ci && npm run start:debug:docker"
+    depends_on:
+      - mongodb
+    tmpfs: /tmp
+    ports:
+      - 9229:9229
+    
+  web:
+    image: node:16-alpine
+    container_name: carontecars-web
+    privileged: true
+    env_file:
+      - .env
+    volumes:
+      - ${DATA_PATH_HOST}/docker/certs:/certs
+      - ../web:/app
+    working_dir: /app
+    command: sh -c "npm ci && npm run dev"
+    depends_on:
+      - api
+    tmpfs: /tmp
+    ports:
+      - 3000:3000
