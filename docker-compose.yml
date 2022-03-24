@@ -1,9 +1,10 @@
 version: "3.9"
 services:
-  
+
+  # MONGODB
   mongodb:
     image: mongo:4.2
-    container_name: carontecar-mongodb
+    container_name: drakcar-mongodb
     environment:
       - MONGO_INITDB_ROOT_USERNAME=${MONGODB_USERNAME}
       - MONGO_INITDB_ROOT_PASSWORD=${MONGODB_PASSWORD}
@@ -17,9 +18,10 @@ services:
     ports:
       - 27017:27017
 
+  # MONGODB-EXPRESS
   mongo-express:
     image: mongo-express:0.54.0
-    container_name: carontecar-mongo-express
+    container_name: drakcar-mongo-express
     environment:
       - ME_CONFIG_MONGODB_ADMINUSERNAME=${MONGODB_USERNAME}
       - ME_CONFIG_MONGODB_ADMINPASSWORD=${MONGODB_PASSWORD}
@@ -29,9 +31,10 @@ services:
     expose:
       - 8081
 
+  # API
   api:
-    image: node:16-alpine
-    container_name: carontecars-api
+    image: node:14-alpine
+    container_name: drakcar-api
     privileged: true
     env_file:
       - .env
@@ -45,10 +48,11 @@ services:
     tmpfs: /tmp
     ports:
       - 9229:9229
-    
+
+  # WEB
   web:
-    image: node:16-alpine
-    container_name: carontecars-web
+    image: node:14-alpine
+    container_name: drakcar-web
     privileged: true
     env_file:
       - .env
@@ -62,3 +66,65 @@ services:
     tmpfs: /tmp
     ports:
       - 3000:3000
+  
+  # KEYCLOAK
+  keycloak:
+    image: quay.io/keycloak/keycloak:17.0.1
+    command: start-dev
+    container_name: drakcar-keycloak
+    env_file:
+      - .env
+    environment:
+      DB_VENDOR: ${KEYCLOAK_DB_VENDOR}
+      DB_ADDR: ${KEYCLOAK_DB_ADDR}
+      DB_PORT: 5432
+      DB_NAME: ${KEYCLOAK_DB_NAME}
+      DB_USER: ${KEYCLOAK_DB_USER}
+      DB_PASSWORD: ${KEYCLOAK_DB_PASS}
+      KEYCLOAK_ADMIN: ${KEYCLOAK_USER}
+      KEYCLOAK_ADMIN_PASSWORD: ${KEYCLOAK_PASSWORD}
+    # volumes:
+    #   - ${CONFIG_PATH_HOST}/keycloak/starter-theme:/opt/jboss/keycloak/themes/starter
+    #   - ${CONFIG_PATH_HOST}/keycloak/initial-config:/opt/jboss/keycloak/config
+    #   - ${CONFIG_PATH_HOST}/keycloak/startup:/opt/jboss/startup-scripts
+    ports:
+      - 8080:8080
+    depends_on:
+      - postgres
+
+  # POSTGRES
+  postgres:
+    image: postgres:9.6
+    user: postgres
+    privileged: true
+    container_name: drakcar-postgres
+    env_file:
+      - .env
+    volumes:
+      - ${CONFIG_PATH_HOST}/postgres:/docker-entrypoint-initdb.d/
+      - ${DATA_PATH_HOST}/postgres:/var/lib/postgresql/data
+    expose:
+      - 5432
+    ports:
+      - "${POSTGRES_PORT}:5432"
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - KEYCLOAK_DB_NAME=${KEYCLOAK_DB_NAME}
+      - KEYCLOAK_DB_USER=${KEYCLOAK_DB_USER}
+      - KEYCLOAK_DB_PASS=${KEYCLOAK_DB_PASS}
+
+  # PGADMIN
+  pgadmin:
+    env_file:
+      - .env
+    container_name: drakcar-pgadmin
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
+    expose:
+      - 80
+    volumes:
+      - ${CONFIG_PATH_HOST}/pgadmin/servers.json:/pgadmin4/servers.json
