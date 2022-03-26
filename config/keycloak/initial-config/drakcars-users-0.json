@@ -1,0 +1,26 @@
+{
+  "realm" : "drakcars",
+  "users" : [ {
+    "id" : "330f9f0e-230d-45b4-9bbd-45e0be80ccac",
+    "createdTimestamp" : 1648299154531,
+    "username" : "superadmin",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "credentials" : [ {
+      "id" : "81da3094-5774-48f1-8aa3-ea91d9d82dba",
+      "type" : "password",
+      "createdDate" : 1648299177331,
+      "secretData" : "{\"value\":\"FB20wVuu116Ip3i8+0map4ws2Zu8Y/nJ3EQAK1pMdX5JpnWoPKkUqA4fVwzBVA93a1DgINFe2/uYHNpMdf9Hjg==\",\"salt\":\"WwLbPbgX1ttg2aLplIbNfw==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-drakcars" ],
+    "clientRoles" : {
+      "realm-management" : [ "query-users", "manage-identity-providers", "query-groups", "view-realm", "view-events", "manage-users", "manage-clients", "query-realms", "create-client", "manage-events", "query-clients", "view-identity-providers", "realm-admin", "view-clients", "manage-realm", "impersonation", "manage-authorization", "view-authorization", "view-users" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  } ]
+}

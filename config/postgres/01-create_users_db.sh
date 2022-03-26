@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+set -u
+
+echo "Creating keycloak user and database"
+echo "Creating user ${KEYCLOAK_DB_USER}, db ${KEYCLOAK_DB_NAME}, WITH ${KEYCLOAK_DB_PASS}"
+psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" <<-EOSQL
+	    CREATE USER ${KEYCLOAK_DB_USER} WITH CREATEDB PASSWORD '${KEYCLOAK_DB_PASS}';
+	    CREATE DATABASE ${KEYCLOAK_DB_NAME} owner ${KEYCLOAK_DB_USER};
+	    GRANT ALL PRIVILEGES ON DATABASE ${KEYCLOAK_DB_NAME} TO ${KEYCLOAK_DB_USER};
+EOSQL
