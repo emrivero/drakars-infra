@@ -1,6 +1,48 @@
 {
   "realm" : "drakcars",
   "users" : [ {
+    "id" : "7ad1fc51-650e-4226-aae6-4cf800f910e9",
+    "createdTimestamp" : 1648320035560,
+    "username" : "asemeu7@gmail.com",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "Emilio",
+    "lastName" : "Martinez",
+    "email" : "asemeu7@gmail.com",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ "VERIFY_EMAIL" ],
+    "federatedIdentities" : [ {
+      "identityProvider" : "google",
+      "userId" : "115818683188561905887",
+      "userName" : "asemeu7@gmail.com"
+    } ],
+    "realmRoles" : [ "default-roles-drakcars" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "edc4ab8b-62c9-4602-a63d-071dad368c53",
+    "createdTimestamp" : 1648321214249,
+    "username" : "emiliomartinezriv@gmail.com",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "Emilio",
+    "lastName" : "Martínez Rivero",
+    "email" : "emiliomartinezriv@gmail.com",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ "VERIFY_EMAIL" ],
+    "federatedIdentities" : [ {
+      "identityProvider" : "google",
+      "userId" : "104509337007663794007",
+      "userName" : "emiliomartinezriv@gmail.com"
+    } ],
+    "realmRoles" : [ "default-roles-drakcars" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
     "id" : "330f9f0e-230d-45b4-9bbd-45e0be80ccac",
     "createdTimestamp" : 1648299154531,
     "username" : "superadmin",
