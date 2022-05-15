@@ -2,7 +2,7 @@ version: "3.9"
 services:
   mailer:
     image: mailhog/mailhog:latest
-    container_name: drakcar-mailer
+    container_name: drakar-mailer
     ports:
       - 1025:1025 
       - 8025:8025 
@@ -10,7 +10,7 @@ services:
   # MARIADB
   mariadb:
     image: linuxserver/mariadb
-    container_name: drakcar-mariadb
+    container_name: drakar-mariadb
     environment:
       - PUID=1000
       - PGID=1000
@@ -27,7 +27,7 @@ services:
   # API
   api:
     image: node:14-alpine
-    container_name: drakcar-api
+    container_name: drakar-api
     privileged: true
     env_file:
       - .env
@@ -46,7 +46,7 @@ services:
   # WEB
   # web:
   #   image: node:14-alpine
-  #   container_name: drakcar-web
+  #   container_name: drakar-web
   #   privileged: true
   #   env_file:
   #     - .env
@@ -65,7 +65,7 @@ services:
   keycloak:
     image: quay.io/keycloak/keycloak:16.1.1
     command: -b 0.0.0.0
-    container_name: drakcar-keycloak
+    container_name: drakar-keycloak
     env_file:
       - .env
     environment:
@@ -80,7 +80,7 @@ services:
     volumes:
       - ${CONFIG_PATH_HOST}/keycloak/initial-config:/opt/jboss/keycloak/config
       - ${CONFIG_PATH_HOST}/keycloak/startup:/opt/jboss/startup-scripts
-      # - ${CONFIG_PATH_HOST}/keycloak/themes:/opt/jboss/keycloak/themes
+      - ${CONFIG_PATH_HOST}/keycloak/themes:/opt/jboss/keycloak/themes
     ports:
       - 8080:8080
     depends_on:
@@ -91,7 +91,7 @@ services:
     image: postgres:9.6
     user: postgres
     privileged: true
-    container_name: drakcar-postgres
+    container_name: drakar-postgres
     env_file:
       - .env
     volumes:
@@ -113,7 +113,7 @@ services:
   pgadmin:
     env_file:
       - .env
-    container_name: drakcar-pgadmin
+    container_name: drakar-pgadmin
     image: dpage/pgadmin4
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}

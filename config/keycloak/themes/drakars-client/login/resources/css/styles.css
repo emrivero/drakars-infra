@@ -1,0 +1,31 @@
+.login-pf body {
+  background: url(../img/bg-image.jpg);
+  --pf-global--primary-color--100: #3f51b5;
+}
+
+.login-pf-page-header#kc-header #kc-header-wrapper {
+  color: #3f51b5;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 6px;
+}
+
+.login-pf-page-header#kc-header #kc-header-wrapper2 {
+  color: #3f51b5;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  line-height: 1.2em;
+  font-size: 29px;
+  padding: 12px 10px 20px;
+  white-space: normal;
+}
+
+#kc-info-wrapper,
+.card-pf {
+  border-radius: 5px;
+}
+
+#kc-form-login input.pf-c-form-control:focus-visible {
+  border-color: red;
+}
