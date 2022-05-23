@@ -1,0 +1,129 @@
+version: "3.9"
+services:
+  nginx:
+    image: nginx:latest
+    container_name: drakars-nginx
+    restart: unless-stopped
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ../web/build:/usr/share/nginx/html
+      - ${CONFIG_PATH_HOST}/nginx:/etc/nginx/conf.d
+
+  # MARIADB
+  mariadb:
+    image: linuxserver/mariadb
+    container_name: drakar-mariadb
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - MYSQL_ROOT_PASSWORD=${MARIADB_ROOT_PASS}
+      - MYSQL_DATABASE=${MARIADB_DB}
+      - MYSQL_USER=${MARIADB_USER}
+      - MYSQL_PASSWORD=${MARIADB_PASS}
+      - TZ=Europe/Madrid
+    volumes:
+      - ${DATA_PATH_HOST}/mariadb:/config
+    # ports:
+    #   - 3306:3306
+
+  # API
+  api:
+    image: node:14-alpine
+    container_name: drakar-api
+    privileged: true
+    env_file:
+      - .env
+    volumes:
+      - ${DATA_PATH_HOST}/docker/certs:/certs
+      - ../backend:/app
+    working_dir: /app
+    command: sh -c "npm ci && npm run start:debug:docker"
+    depends_on:
+      - mariadb
+    tmpfs: /tmp
+    # ports:
+    #   - 9229:9229
+    #   - 5000:5000
+
+  # WEB
+  # web:
+  #   image: node:14-alpine
+  #   container_name: drakar-web
+  #   privileged: true
+  #   env_file:
+  #     - .env
+  #   volumes:
+  #     - ${DATA_PATH_HOST}/docker/certs:/certs
+  #     - ../web:/app
+  #   working_dir: /app
+  #   command: sh -c "npm i && npm run dev"
+  #   depends_on:
+  #     - api
+  #   tmpfs: /tmp
+  #   ports:
+  #     - 3000:3000
+  
+  # KEYCLOAK
+  keycloak:
+    image: quay.io/keycloak/keycloak:16.1.1
+    command: -b 0.0.0.0
+    container_name: drakar-keycloak
+    env_file:
+      - .env
+    environment:
+      DB_VENDOR: ${KEYCLOAK_DB_VENDOR}
+      DB_ADDR: ${KEYCLOAK_DB_ADDR}
+      DB_PORT: 5432
+      DB_NAME: ${KEYCLOAK_DB_NAME}
+      DB_USER: ${KEYCLOAK_DB_USER}
+      DB_PASSWORD: ${KEYCLOAK_DB_PASS}
+      KEYCLOAK_ADMIN: ${KEYCLOAK_USER}
+      KEYCLOAK_ADMIN_PASSWORD: ${KEYCLOAK_PASSWORD}
+      PROXY_ADDRESS_FORWARDING: "true"  
+    volumes:
+      - ${CONFIG_PATH_HOST}/keycloak/initial-config:/opt/jboss/keycloak/config
+      - ${CONFIG_PATH_HOST}/keycloak/startup:/opt/jboss/startup-scripts
+      - ${CONFIG_PATH_HOST}/keycloak/themes:/opt/jboss/keycloak/themes
+    # ports:
+    #   - 8080:8080
+    depends_on:
+      - postgres
+
+  # POSTGRES
+  postgres:
+    image: postgres:9.6
+    user: postgres
+    privileged: true
+    container_name: drakar-postgres
+    env_file:
+      - .env
+    volumes:
+      - ${CONFIG_PATH_HOST}/postgres:/docker-entrypoint-initdb.d/
+      - ${DATA_PATH_HOST}/postgres:/var/lib/postgresql/data
+    expose:
+      - 5432
+    ports:
+      - "${POSTGRES_PORT}:5432"
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - KEYCLOAK_DB_NAME=${KEYCLOAK_DB_NAME}
+      - KEYCLOAK_DB_USER=${KEYCLOAK_DB_USER}
+      - KEYCLOAK_DB_PASS=${KEYCLOAK_DB_PASS}
+
+  # PGADMIN
+  pgadmin:
+    env_file:
+      - .env
+    container_name: drakar-pgadmin
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
+    # expose:
+    #   - 80
+    volumes:
+      - ${CONFIG_PATH_HOST}/pgadmin/servers.json:/pgadmin4/servers.json
