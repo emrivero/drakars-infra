@@ -1,17 +1,24 @@
 .login-pf body {
-  background: url(../img/bg-image.jpg);
-  --pf-global--primary-color--100: #3f51b5;
+  background: #536976; /* fallback for old browsers */
+  background: url(../img/admin-bg.jpeg); /* Chrome 10-25, Safari 5.1-6 */
+  background: url(../img/admin-bg.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  --pf-global--primary-color--100: #111939;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-left: 5rem;
 }
 
 .login-pf-page-header#kc-header #kc-header-wrapper {
-  color: #3f51b5;
+  color: #fff;
   font-weight: 600;
   font-size: 22px;
   letter-spacing: 6px;
 }
 
 .login-pf-page-header#kc-header #kc-header-wrapper2 {
-  color: #3f51b5;
+  color: #fff;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 6px;
@@ -28,4 +35,11 @@
 
 #kc-form-login input.pf-c-form-control:focus-visible {
   border-color: red;
+}
+
+.card-pf {
+  margin: 0 0;
+  width: 680px;
+  max-width: 750px;
+  border-color: #ffd54f;
 }
