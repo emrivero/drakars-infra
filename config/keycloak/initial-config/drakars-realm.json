@@ -1311,7 +1311,7 @@
     "strictTransportSecurity": "max-age=31536000; includeSubDomains"
   },
   "smtpServer": {
-    "password": "Emr-Thor.314159",
+    "password": "VcTw1YtMg0xGhw",
     "starttls": "true",
     "auth": "true",
     "port": "587",
