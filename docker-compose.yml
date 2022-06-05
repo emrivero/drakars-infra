@@ -1,12 +1,5 @@
 version: "3.9"
 services:
-  mailer:
-    image: mailhog/mailhog:latest
-    container_name: drakar-mailer
-    ports:
-      - 1025:1025 
-      - 8025:8025 
-
   # MARIADB
   mariadb:
     image: linuxserver/mariadb

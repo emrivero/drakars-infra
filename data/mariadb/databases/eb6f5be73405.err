@@ -1,0 +1,685 @@
+220515 17:15:53 mysqld_safe Starting mariadbd daemon with databases from /config/databases
+2022-05-15 17:15:53 0 [Note] /usr/bin/mariadbd (mysqld 10.5.15-MariaDB-log) starting as process 521 ...
+2022-05-15 17:15:53 0 [Note] InnoDB: Uses event mutexes
+2022-05-15 17:15:53 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2022-05-15 17:15:53 0 [Note] InnoDB: Number of pools: 1
+2022-05-15 17:15:53 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2022-05-15 17:15:53 0 [Note] mariadbd: O_TMPFILE is not supported on /var/tmp (disabling future attempts)
+2022-05-15 17:15:53 0 [Note] InnoDB: Using Linux native AIO
+2022-05-15 17:15:53 0 [Note] InnoDB: Initializing buffer pool, total size = 268435456, chunk size = 134217728
+2022-05-15 17:15:53 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-05-15 17:15:53 0 [Note] InnoDB: 128 rollback segments are active.
+2022-05-15 17:15:53 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2022-05-15 17:15:53 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2022-05-15 17:15:53 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2022-05-15 17:15:53 0 [Note] InnoDB: 10.5.15 started; log sequence number 140734359; transaction id 5393
+2022-05-15 17:15:53 0 [Note] InnoDB: Loading buffer pool(s) from /config/databases/ib_buffer_pool
+2022-05-15 17:15:53 0 [Note] Plugin 'FEEDBACK' is disabled.
+2022-05-15 17:15:53 0 [Note] InnoDB: Buffer pool(s) load completed at 220515 17:15:53
+2022-05-15 17:15:53 0 [Note] Server socket created on IP: '::'.
+2022-05-15 17:15:53 0 [Note] Reading of all Master_info entries succeeded
+2022-05-15 17:15:53 0 [Note] Added new Master_info '' to hash table
+2022-05-15 17:15:53 0 [Note] /usr/bin/mariadbd: ready for connections.
+Version: '10.5.15-MariaDB-log'  socket: '/run/mysqld/mysqld.sock'  port: 3306  MariaDB Server
+2022-05-15 17:17:57 5 [Warning] Aborted connection 5 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 17:17:57 4 [Warning] Aborted connection 4 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 17:19:13 7 [Warning] Aborted connection 7 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 17:19:13 6 [Warning] Aborted connection 6 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 17:27:27 9 [Warning] Aborted connection 9 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 17:27:27 8 [Warning] Aborted connection 8 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 17:27:27 0 [Note] /usr/bin/mariadbd (initiated by: unknown): Normal shutdown
+2022-05-15 17:27:27 0 [Note] Event Scheduler: Purging the queue. 0 events
+2022-05-15 17:27:27 0 [Note] InnoDB: FTS optimize thread exiting.
+2022-05-15 17:27:27 0 [Note] InnoDB: Starting shutdown...
+2022-05-15 17:27:27 0 [Note] InnoDB: Dumping buffer pool(s) to /config/databases/ib_buffer_pool
+2022-05-15 17:27:27 0 [Note] InnoDB: Buffer pool(s) dump completed at 220515 17:27:27
+2022-05-15 17:27:28 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2022-05-15 17:27:28 0 [Note] InnoDB: Shutdown completed; log sequence number 140734371; transaction id 5404
+2022-05-15 17:27:28 0 [Note] /usr/bin/mariadbd: Shutdown complete
+
+220515 17:27:28 mysqld_safe mysqld from pid file /var/run/mysqld/mysqld.pid ended
+220515 17:28:21 mysqld_safe Starting mariadbd daemon with databases from /config/databases
+2022-05-15 17:28:21 0 [Note] /usr/bin/mariadbd (mysqld 10.5.15-MariaDB-log) starting as process 520 ...
+2022-05-15 17:28:21 0 [Note] InnoDB: Uses event mutexes
+2022-05-15 17:28:21 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2022-05-15 17:28:21 0 [Note] InnoDB: Number of pools: 1
+2022-05-15 17:28:21 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2022-05-15 17:28:21 0 [Note] mariadbd: O_TMPFILE is not supported on /var/tmp (disabling future attempts)
+2022-05-15 17:28:21 0 [Note] InnoDB: Using Linux native AIO
+2022-05-15 17:28:21 0 [Note] InnoDB: Initializing buffer pool, total size = 268435456, chunk size = 134217728
+2022-05-15 17:28:21 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-05-15 17:28:21 0 [Note] InnoDB: 128 rollback segments are active.
+2022-05-15 17:28:21 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2022-05-15 17:28:21 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2022-05-15 17:28:21 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2022-05-15 17:28:21 0 [Note] InnoDB: 10.5.15 started; log sequence number 140734371; transaction id 5393
+2022-05-15 17:28:21 0 [Note] Plugin 'FEEDBACK' is disabled.
+2022-05-15 17:28:21 0 [Note] InnoDB: Loading buffer pool(s) from /config/databases/ib_buffer_pool
+2022-05-15 17:28:21 0 [Note] InnoDB: Buffer pool(s) load completed at 220515 17:28:21
+2022-05-15 17:28:21 0 [Note] Server socket created on IP: '::'.
+2022-05-15 17:28:21 0 [Note] Reading of all Master_info entries succeeded
+2022-05-15 17:28:21 0 [Note] Added new Master_info '' to hash table
+2022-05-15 17:28:21 0 [Note] /usr/bin/mariadbd: ready for connections.
+Version: '10.5.15-MariaDB-log'  socket: '/run/mysqld/mysqld.sock'  port: 3306  MariaDB Server
+2022-05-15 17:38:50 4 [Warning] Aborted connection 4 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-15 17:38:50 5 [Warning] Aborted connection 5 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-15 18:04:20 6 [Warning] Aborted connection 6 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-15 18:04:20 7 [Warning] Aborted connection 7 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-15 19:26:18 8 [Warning] Aborted connection 8 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-15 22:46:13 0 [Note] /usr/bin/mariadbd (initiated by: unknown): Normal shutdown
+2022-05-15 22:46:13 0 [Note] Event Scheduler: Purging the queue. 0 events
+2022-05-15 22:46:13 0 [Note] InnoDB: FTS optimize thread exiting.
+2022-05-15 22:46:13 0 [Note] InnoDB: Starting shutdown...
+2022-05-15 22:46:13 0 [Note] InnoDB: Dumping buffer pool(s) to /config/databases/ib_buffer_pool
+2022-05-15 22:46:13 0 [Note] InnoDB: Buffer pool(s) dump completed at 220515 22:46:13
+2022-05-15 22:46:13 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2022-05-15 22:46:13 0 [Note] InnoDB: Shutdown completed; log sequence number 140734383; transaction id 5404
+2022-05-15 22:46:13 0 [Note] /usr/bin/mariadbd: Shutdown complete
+
+220515 22:46:13 mysqld_safe mysqld from pid file /var/run/mysqld/mysqld.pid ended
+220515 23:24:56 mysqld_safe Starting mariadbd daemon with databases from /config/databases
+2022-05-15 23:24:56 0 [Note] /usr/bin/mariadbd (mysqld 10.5.15-MariaDB-log) starting as process 520 ...
+2022-05-15 23:24:56 0 [Note] InnoDB: Uses event mutexes
+2022-05-15 23:24:56 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2022-05-15 23:24:56 0 [Note] InnoDB: Number of pools: 1
+2022-05-15 23:24:56 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2022-05-15 23:24:56 0 [Note] mariadbd: O_TMPFILE is not supported on /var/tmp (disabling future attempts)
+2022-05-15 23:24:56 0 [Note] InnoDB: Using Linux native AIO
+2022-05-15 23:24:56 0 [Note] InnoDB: Initializing buffer pool, total size = 268435456, chunk size = 134217728
+2022-05-15 23:24:56 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-05-15 23:24:56 0 [Note] InnoDB: 128 rollback segments are active.
+2022-05-15 23:24:56 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2022-05-15 23:24:56 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2022-05-15 23:24:56 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2022-05-15 23:24:56 0 [Note] InnoDB: 10.5.15 started; log sequence number 140734383; transaction id 5393
+2022-05-15 23:24:56 0 [Note] Plugin 'FEEDBACK' is disabled.
+2022-05-15 23:24:56 0 [Note] InnoDB: Loading buffer pool(s) from /config/databases/ib_buffer_pool
+2022-05-15 23:24:56 0 [Note] Server socket created on IP: '::'.
+2022-05-15 23:24:56 0 [Note] InnoDB: Buffer pool(s) load completed at 220515 23:24:56
+2022-05-15 23:24:56 0 [Note] Reading of all Master_info entries succeeded
+2022-05-15 23:24:56 0 [Note] Added new Master_info '' to hash table
+2022-05-15 23:24:56 0 [Note] /usr/bin/mariadbd: ready for connections.
+Version: '10.5.15-MariaDB-log'  socket: '/run/mysqld/mysqld.sock'  port: 3306  MariaDB Server
+2022-05-15 23:35:26 4 [Warning] Aborted connection 4 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-15 23:35:26 5 [Warning] Aborted connection 5 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-15 23:44:41 6 [Warning] Aborted connection 6 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:44:41 7 [Warning] Aborted connection 7 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:44:53 11 [Warning] Aborted connection 11 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:44:53 10 [Warning] Aborted connection 10 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:45:13 13 [Warning] Aborted connection 13 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:45:13 12 [Warning] Aborted connection 12 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:45:29 15 [Warning] Aborted connection 15 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:45:29 14 [Warning] Aborted connection 14 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:45:56 16 [Warning] Aborted connection 16 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:45:56 17 [Warning] Aborted connection 17 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:46:00 19 [Warning] Aborted connection 19 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:46:00 18 [Warning] Aborted connection 18 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:48:18 21 [Warning] Aborted connection 21 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:48:18 20 [Warning] Aborted connection 20 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:49:49 22 [Warning] Aborted connection 22 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:49:49 23 [Warning] Aborted connection 23 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:49:59 25 [Warning] Aborted connection 25 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:49:59 24 [Warning] Aborted connection 24 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:51:51 27 [Warning] Aborted connection 27 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:51:51 26 [Warning] Aborted connection 26 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:52:31 28 [Warning] Aborted connection 28 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:52:31 29 [Warning] Aborted connection 29 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:52:57 31 [Warning] Aborted connection 31 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:52:57 30 [Warning] Aborted connection 30 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:53:10 32 [Warning] Aborted connection 32 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-15 23:53:10 33 [Warning] Aborted connection 33 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-16  0:02:40 35 [Warning] Aborted connection 35 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-16  0:02:40 34 [Warning] Aborted connection 34 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-16  0:12:43 36 [Warning] Aborted connection 36 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-16  0:16:08 38 [Warning] Aborted connection 38 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-16  0:20:46 37 [Warning] Aborted connection 37 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-16  0:27:11 40 [Warning] Aborted connection 40 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-16  0:27:11 39 [Warning] Aborted connection 39 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-16  0:27:38 42 [Warning] Aborted connection 42 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-16  0:27:38 41 [Warning] Aborted connection 41 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-16  0:29:39 0 [Note] /usr/bin/mariadbd (initiated by: unknown): Normal shutdown
+2022-05-16  0:29:39 0 [Note] Event Scheduler: Purging the queue. 0 events
+2022-05-16  0:29:39 0 [Note] InnoDB: FTS optimize thread exiting.
+2022-05-16  0:29:39 0 [Note] InnoDB: Starting shutdown...
+2022-05-16  0:29:39 0 [Note] InnoDB: Dumping buffer pool(s) to /config/databases/ib_buffer_pool
+2022-05-16  0:29:39 0 [Note] InnoDB: Buffer pool(s) dump completed at 220516  0:29:39
+2022-05-16  0:29:40 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2022-05-16  0:29:40 0 [Note] InnoDB: Shutdown completed; log sequence number 140735967; transaction id 5409
+2022-05-16  0:29:40 0 [Note] /usr/bin/mariadbd: Shutdown complete
+
+220516 00:29:40 mysqld_safe mysqld from pid file /var/run/mysqld/mysqld.pid ended
+220516 18:38:13 mysqld_safe Starting mariadbd daemon with databases from /config/databases
+2022-05-16 18:38:13 0 [Note] /usr/bin/mariadbd (mysqld 10.5.15-MariaDB-log) starting as process 521 ...
+2022-05-16 18:38:13 0 [Note] InnoDB: Uses event mutexes
+2022-05-16 18:38:13 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2022-05-16 18:38:13 0 [Note] InnoDB: Number of pools: 1
+2022-05-16 18:38:13 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2022-05-16 18:38:13 0 [Note] mariadbd: O_TMPFILE is not supported on /var/tmp (disabling future attempts)
+2022-05-16 18:38:13 0 [Note] InnoDB: Using Linux native AIO
+2022-05-16 18:38:13 0 [Note] InnoDB: Initializing buffer pool, total size = 268435456, chunk size = 134217728
+2022-05-16 18:38:13 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-05-16 18:38:13 0 [Note] InnoDB: 128 rollback segments are active.
+2022-05-16 18:38:13 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2022-05-16 18:38:13 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2022-05-16 18:38:13 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2022-05-16 18:38:13 0 [Note] InnoDB: 10.5.15 started; log sequence number 140735967; transaction id 5409
+2022-05-16 18:38:13 0 [Note] Plugin 'FEEDBACK' is disabled.
+2022-05-16 18:38:13 0 [Note] InnoDB: Loading buffer pool(s) from /config/databases/ib_buffer_pool
+2022-05-16 18:38:13 0 [Note] InnoDB: Buffer pool(s) load completed at 220516 18:38:13
+2022-05-16 18:38:13 0 [Note] Server socket created on IP: '::'.
+2022-05-16 18:38:13 0 [Note] Reading of all Master_info entries succeeded
+2022-05-16 18:38:13 0 [Note] Added new Master_info '' to hash table
+2022-05-16 18:38:13 0 [Note] /usr/bin/mariadbd: ready for connections.
+Version: '10.5.15-MariaDB-log'  socket: '/run/mysqld/mysqld.sock'  port: 3306  MariaDB Server
+2022-05-16 18:48:40 4 [Warning] Aborted connection 4 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-16 18:48:41 5 [Warning] Aborted connection 5 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-16 19:02:44 8 [Warning] Aborted connection 8 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-16 19:02:44 9 [Warning] Aborted connection 9 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-16 19:12:47 10 [Warning] Aborted connection 10 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-16 19:12:47 11 [Warning] Aborted connection 11 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-16 19:21:19 13 [Warning] Aborted connection 13 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-16 19:21:19 12 [Warning] Aborted connection 12 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-16 19:34:35 26 [Warning] Aborted connection 26 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-16 19:34:35 27 [Warning] Aborted connection 27 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-16 20:06:56 28 [Warning] Aborted connection 28 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-16 20:06:56 29 [Warning] Aborted connection 29 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-16 20:14:04 30 [Warning] Aborted connection 30 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-16 20:24:06 31 [Warning] Aborted connection 31 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-16 20:25:29 32 [Warning] Aborted connection 32 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-16 21:41:31 33 [Warning] Aborted connection 33 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-16 21:42:00 35 [Warning] Aborted connection 35 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-16 21:42:00 34 [Warning] Aborted connection 34 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-16 23:36:44 36 [Warning] Aborted connection 36 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-16 23:38:33 37 [Warning] Aborted connection 37 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-18 20:54:48 38 [Warning] Aborted connection 38 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-18 20:56:49 40 [Warning] Aborted connection 40 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-18 20:56:49 39 [Warning] Aborted connection 39 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-18 20:57:32 42 [Warning] Aborted connection 42 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-18 20:57:32 41 [Warning] Aborted connection 41 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-18 20:59:15 46 [Warning] Aborted connection 46 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-18 20:59:15 45 [Warning] Aborted connection 45 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-18 20:59:40 48 [Warning] Aborted connection 48 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-18 20:59:40 47 [Warning] Aborted connection 47 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-18 21:09:41 49 [Warning] Aborted connection 49 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-18 21:09:41 50 [Warning] Aborted connection 50 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-18 21:12:45 51 [Warning] Aborted connection 51 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-18 21:13:05 53 [Warning] Aborted connection 53 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-18 21:13:05 52 [Warning] Aborted connection 52 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-18 21:23:06 54 [Warning] Aborted connection 54 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-18 21:40:09 55 [Warning] Aborted connection 55 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-18 21:42:50 57 [Warning] Aborted connection 57 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-18 21:42:50 56 [Warning] Aborted connection 56 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-18 21:52:52 58 [Warning] Aborted connection 58 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-18 21:54:01 59 [Warning] Aborted connection 59 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-18 23:32:06 60 [Warning] Aborted connection 60 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-20 19:47:39 61 [Warning] Aborted connection 61 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-20 20:26:08 62 [Warning] Aborted connection 62 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-20 20:30:12 63 [Warning] Aborted connection 63 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-20 21:00:12 64 [Warning] Aborted connection 64 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-20 21:00:20 66 [Warning] Aborted connection 66 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-20 21:00:20 65 [Warning] Aborted connection 65 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-20 21:10:21 67 [Warning] Aborted connection 67 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-20 21:10:21 68 [Warning] Aborted connection 68 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-20 21:25:07 69 [Warning] Aborted connection 69 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-20 21:25:07 70 [Warning] Aborted connection 70 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-20 21:25:07 0 [Note] /usr/bin/mariadbd (initiated by: unknown): Normal shutdown
+2022-05-20 21:25:07 0 [Note] Event Scheduler: Purging the queue. 0 events
+2022-05-20 21:25:07 0 [Note] InnoDB: FTS optimize thread exiting.
+2022-05-20 21:25:07 0 [Note] InnoDB: Starting shutdown...
+2022-05-20 21:25:07 0 [Note] InnoDB: Dumping buffer pool(s) to /config/databases/ib_buffer_pool
+2022-05-20 21:25:07 0 [Note] InnoDB: Buffer pool(s) dump completed at 220520 21:25:07
+2022-05-20 21:25:07 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2022-05-20 21:25:07 0 [Note] InnoDB: Shutdown completed; log sequence number 140775243; transaction id 5502
+2022-05-20 21:25:07 0 [Note] /usr/bin/mariadbd: Shutdown complete
+
+220520 21:25:07 mysqld_safe mysqld from pid file /var/run/mysqld/mysqld.pid ended
+220520 21:25:17 mysqld_safe Starting mariadbd daemon with databases from /config/databases
+2022-05-20 21:25:17 0 [Note] /usr/bin/mariadbd (mysqld 10.5.15-MariaDB-log) starting as process 521 ...
+2022-05-20 21:25:17 0 [Note] InnoDB: Uses event mutexes
+2022-05-20 21:25:17 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2022-05-20 21:25:17 0 [Note] InnoDB: Number of pools: 1
+2022-05-20 21:25:17 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2022-05-20 21:25:17 0 [Note] mariadbd: O_TMPFILE is not supported on /var/tmp (disabling future attempts)
+2022-05-20 21:25:17 0 [Note] InnoDB: Using Linux native AIO
+2022-05-20 21:25:17 0 [Note] InnoDB: Initializing buffer pool, total size = 268435456, chunk size = 134217728
+2022-05-20 21:25:17 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-05-20 21:25:17 0 [Note] InnoDB: 128 rollback segments are active.
+2022-05-20 21:25:17 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2022-05-20 21:25:17 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2022-05-20 21:25:17 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2022-05-20 21:25:17 0 [Note] InnoDB: 10.5.15 started; log sequence number 140775243; transaction id 5502
+2022-05-20 21:25:17 0 [Note] Plugin 'FEEDBACK' is disabled.
+2022-05-20 21:25:17 0 [Note] InnoDB: Loading buffer pool(s) from /config/databases/ib_buffer_pool
+2022-05-20 21:25:17 0 [Note] InnoDB: Buffer pool(s) load completed at 220520 21:25:17
+2022-05-20 21:25:17 0 [Note] Server socket created on IP: '::'.
+2022-05-20 21:25:17 0 [Note] Reading of all Master_info entries succeeded
+2022-05-20 21:25:17 0 [Note] Added new Master_info '' to hash table
+2022-05-20 21:25:17 0 [Note] /usr/bin/mariadbd: ready for connections.
+Version: '10.5.15-MariaDB-log'  socket: '/run/mysqld/mysqld.sock'  port: 3306  MariaDB Server
+2022-05-20 21:34:37 5 [Warning] Aborted connection 5 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-20 21:34:37 4 [Warning] Aborted connection 4 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-20 21:44:39 8 [Warning] Aborted connection 8 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-20 21:45:42 9 [Warning] Aborted connection 9 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-20 23:46:29 10 [Warning] Aborted connection 10 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-20 23:49:20 11 [Warning] Aborted connection 11 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-20 23:49:28 12 [Warning] Aborted connection 12 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-20 23:49:28 13 [Warning] Aborted connection 13 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-20 23:59:30 14 [Warning] Aborted connection 14 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21  0:04:19 15 [Warning] Aborted connection 15 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21  0:22:58 16 [Warning] Aborted connection 16 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21  0:29:06 17 [Warning] Aborted connection 17 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21  0:39:13 18 [Warning] Aborted connection 18 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 10:49:37 20 [Warning] Aborted connection 20 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 10:49:40 19 [Warning] Aborted connection 19 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 11:05:05 22 [Warning] Aborted connection 22 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:05:05 21 [Warning] Aborted connection 21 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:08:31 24 [Warning] Aborted connection 24 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:08:31 23 [Warning] Aborted connection 23 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:08:43 26 [Warning] Aborted connection 26 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:08:43 25 [Warning] Aborted connection 25 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:08:53 28 [Warning] Aborted connection 28 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:08:53 27 [Warning] Aborted connection 27 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:18:55 29 [Warning] Aborted connection 29 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 11:18:55 30 [Warning] Aborted connection 30 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 11:40:28 32 [Warning] Aborted connection 32 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:40:28 31 [Warning] Aborted connection 31 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:42:18 34 [Warning] Aborted connection 34 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:42:18 33 [Warning] Aborted connection 33 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:42:52 36 [Warning] Aborted connection 36 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:42:52 35 [Warning] Aborted connection 35 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:43:01 38 [Warning] Aborted connection 38 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:43:01 37 [Warning] Aborted connection 37 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:43:32 39 [Warning] Aborted connection 39 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:43:32 40 [Warning] Aborted connection 40 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:44:16 42 [Warning] Aborted connection 42 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:44:16 41 [Warning] Aborted connection 41 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:45:32 44 [Warning] Aborted connection 44 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:45:32 43 [Warning] Aborted connection 43 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:45:34 45 [Warning] Aborted connection 45 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:45:34 46 [Warning] Aborted connection 46 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 11:55:51 47 [Warning] Aborted connection 47 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 12:02:40 48 [Warning] Aborted connection 48 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:02:40 49 [Warning] Aborted connection 49 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:02:53 51 [Warning] Aborted connection 51 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:02:53 50 [Warning] Aborted connection 50 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:05:36 53 [Warning] Aborted connection 53 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:05:36 52 [Warning] Aborted connection 52 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:07:00 57 [Warning] Aborted connection 57 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:07:00 56 [Warning] Aborted connection 56 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:07:09 59 [Warning] Aborted connection 59 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:07:09 58 [Warning] Aborted connection 58 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:07:15 61 [Warning] Aborted connection 61 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:07:15 60 [Warning] Aborted connection 60 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:16:43 63 [Warning] Aborted connection 63 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:16:43 62 [Warning] Aborted connection 62 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:26:45 64 [Warning] Aborted connection 64 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 12:29:11 65 [Warning] Aborted connection 65 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 12:30:17 66 [Warning] Aborted connection 66 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:34:13 68 [Warning] Aborted connection 68 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:34:13 67 [Warning] Aborted connection 67 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:34:13 69 [Warning] Aborted connection 69 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:37:01 70 [Warning] Aborted connection 70 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:37:01 71 [Warning] Aborted connection 71 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:38:13 73 [Warning] Aborted connection 73 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:38:13 72 [Warning] Aborted connection 72 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:48:15 74 [Warning] Aborted connection 74 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 12:50:56 76 [Warning] Aborted connection 76 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:50:56 75 [Warning] Aborted connection 75 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:51:25 78 [Warning] Aborted connection 78 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:51:25 77 [Warning] Aborted connection 77 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:51:41 79 [Warning] Aborted connection 79 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:51:41 80 [Warning] Aborted connection 80 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:52:08 82 [Warning] Aborted connection 82 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:52:08 81 [Warning] Aborted connection 81 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:52:21 83 [Warning] Aborted connection 83 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:52:21 84 [Warning] Aborted connection 84 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:52:37 86 [Warning] Aborted connection 86 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:52:37 85 [Warning] Aborted connection 85 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:54:26 88 [Warning] Aborted connection 88 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:54:26 87 [Warning] Aborted connection 87 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:54:44 90 [Warning] Aborted connection 90 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:54:44 89 [Warning] Aborted connection 89 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:54:52 92 [Warning] Aborted connection 92 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:54:52 91 [Warning] Aborted connection 91 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:57:02 94 [Warning] Aborted connection 94 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:57:02 93 [Warning] Aborted connection 93 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:57:23 95 [Warning] Aborted connection 95 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 12:57:23 96 [Warning] Aborted connection 96 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:02:39 99 [Warning] Aborted connection 99 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:02:39 98 [Warning] Aborted connection 98 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:02:39 97 [Warning] Aborted connection 97 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:12:41 100 [Warning] Aborted connection 100 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 13:19:08 101 [Warning] Aborted connection 101 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:19:23 103 [Warning] Aborted connection 103 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:19:23 102 [Warning] Aborted connection 102 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:23:32 105 [Warning] Aborted connection 105 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:23:32 104 [Warning] Aborted connection 104 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:33:34 106 [Warning] Aborted connection 106 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 13:35:45 108 [Warning] Aborted connection 108 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:35:45 107 [Warning] Aborted connection 107 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:35:48 110 [Warning] Aborted connection 110 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:35:48 109 [Warning] Aborted connection 109 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:47:06 112 [Warning] Aborted connection 112 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:47:06 111 [Warning] Aborted connection 111 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:47:54 115 [Warning] Aborted connection 115 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:47:54 114 [Warning] Aborted connection 114 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:47:54 113 [Warning] Aborted connection 113 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:48:16 117 [Warning] Aborted connection 117 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:48:16 116 [Warning] Aborted connection 116 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:48:32 118 [Warning] Aborted connection 118 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:48:32 120 [Warning] Aborted connection 120 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:48:32 119 [Warning] Aborted connection 119 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:49:09 122 [Warning] Aborted connection 122 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:49:09 121 [Warning] Aborted connection 121 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:50:28 125 [Warning] Aborted connection 125 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:50:28 123 [Warning] Aborted connection 123 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:50:28 124 [Warning] Aborted connection 124 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:51:57 126 [Warning] Aborted connection 126 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:51:57 127 [Warning] Aborted connection 127 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:52:47 129 [Warning] Aborted connection 129 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:52:47 131 [Warning] Aborted connection 131 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:52:47 130 [Warning] Aborted connection 130 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 13:52:47 128 [Warning] Aborted connection 128 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 14:00:33 134 [Warning] Aborted connection 134 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 14:00:33 133 [Warning] Aborted connection 133 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 14:00:33 135 [Warning] Aborted connection 135 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 14:00:33 132 [Warning] Aborted connection 132 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 14:02:03 138 [Warning] Aborted connection 138 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 14:02:03 136 [Warning] Aborted connection 136 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 14:02:03 137 [Warning] Aborted connection 137 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 14:04:32 142 [Warning] Aborted connection 142 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 14:04:32 141 [Warning] Aborted connection 141 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 14:04:32 140 [Warning] Aborted connection 140 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 14:04:32 139 [Warning] Aborted connection 139 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 14:14:35 143 [Warning] Aborted connection 143 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 14:37:12 145 [Warning] Aborted connection 145 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 14:37:18 144 [Warning] Aborted connection 144 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 14:37:32 146 [Warning] Aborted connection 146 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 17:05:32 148 [Warning] Aborted connection 148 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:05:32 147 [Warning] Aborted connection 147 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:05:32 149 [Warning] Aborted connection 149 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:08:45 151 [Warning] Aborted connection 151 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:08:45 150 [Warning] Aborted connection 150 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:09:58 155 [Warning] Aborted connection 155 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:09:58 154 [Warning] Aborted connection 154 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:09:58 153 [Warning] Aborted connection 153 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:09:58 152 [Warning] Aborted connection 152 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:11:20 157 [Warning] Aborted connection 157 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:11:20 156 [Warning] Aborted connection 156 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:13:11 159 [Warning] Aborted connection 159 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:13:11 158 [Warning] Aborted connection 158 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:14:04 160 [Warning] Aborted connection 160 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:14:04 162 [Warning] Aborted connection 162 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:14:04 163 [Warning] Aborted connection 163 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:14:04 161 [Warning] Aborted connection 161 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:14:25 165 [Warning] Aborted connection 165 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:14:25 164 [Warning] Aborted connection 164 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:24:27 166 [Warning] Aborted connection 166 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 17:40:58 167 [Warning] Aborted connection 167 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:40:58 168 [Warning] Aborted connection 168 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:41:26 170 [Warning] Aborted connection 170 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:41:26 169 [Warning] Aborted connection 169 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:41:45 172 [Warning] Aborted connection 172 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:41:45 171 [Warning] Aborted connection 171 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:42:23 174 [Warning] Aborted connection 174 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:42:23 173 [Warning] Aborted connection 173 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:42:37 175 [Warning] Aborted connection 175 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:42:37 176 [Warning] Aborted connection 176 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:45:25 178 [Warning] Aborted connection 178 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:45:25 177 [Warning] Aborted connection 177 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:55:27 179 [Warning] Aborted connection 179 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 17:59:28 181 [Warning] Aborted connection 181 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 17:59:28 180 [Warning] Aborted connection 180 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 18:00:32 183 [Warning] Aborted connection 183 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 18:00:32 182 [Warning] Aborted connection 182 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 18:00:38 185 [Warning] Aborted connection 185 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 18:00:38 184 [Warning] Aborted connection 184 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 18:10:40 186 [Warning] Aborted connection 186 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 18:11:12 187 [Warning] Aborted connection 187 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 18:50:13 188 [Warning] Aborted connection 188 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 19:11:34 189 [Warning] Aborted connection 189 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 19:34:49 190 [Warning] Aborted connection 190 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 20:07:19 191 [Warning] Aborted connection 191 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 20:09:02 193 [Warning] Aborted connection 193 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 20:09:02 192 [Warning] Aborted connection 192 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 20:09:21 194 [Warning] Aborted connection 194 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 20:09:21 195 [Warning] Aborted connection 195 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 20:19:23 196 [Warning] Aborted connection 196 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 20:30:09 200 [Warning] Aborted connection 200 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 20:35:39 199 [Warning] Aborted connection 199 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 20:35:39 197 [Warning] Aborted connection 197 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 20:35:39 198 [Warning] Aborted connection 198 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 20:36:04 201 [Warning] Aborted connection 201 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 20:36:04 202 [Warning] Aborted connection 202 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 20:46:06 203 [Warning] Aborted connection 203 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 21:03:50 205 [Warning] Aborted connection 205 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 21:04:14 206 [Warning] Aborted connection 206 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 21:16:40 208 [Warning] Aborted connection 208 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 21:16:40 207 [Warning] Aborted connection 207 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 21:16:40 209 [Warning] Aborted connection 209 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 21:16:40 204 [Warning] Aborted connection 204 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 21:17:13 211 [Warning] Aborted connection 211 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 21:17:13 210 [Warning] Aborted connection 210 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 21:17:43 213 [Warning] Aborted connection 213 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 21:17:43 212 [Warning] Aborted connection 212 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 21:21:17 214 [Warning] Aborted connection 214 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 21:21:17 215 [Warning] Aborted connection 215 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 21:21:20 217 [Warning] Aborted connection 217 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 21:21:20 216 [Warning] Aborted connection 216 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 21:24:15 220 [Warning] Aborted connection 220 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 21:24:15 218 [Warning] Aborted connection 218 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 21:24:15 219 [Warning] Aborted connection 219 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 21:24:17 221 [Warning] Aborted connection 221 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 21:24:17 222 [Warning] Aborted connection 222 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 21:26:38 224 [Warning] Aborted connection 224 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 21:26:38 223 [Warning] Aborted connection 223 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 21:36:40 225 [Warning] Aborted connection 225 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 21:37:06 226 [Warning] Aborted connection 226 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 21:47:08 227 [Warning] Aborted connection 227 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 21:47:27 228 [Warning] Aborted connection 228 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 21:48:14 230 [Warning] Aborted connection 230 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 21:48:14 229 [Warning] Aborted connection 229 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 21:58:16 231 [Warning] Aborted connection 231 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 21:58:16 232 [Warning] Aborted connection 232 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 23:40:36 233 [Warning] Aborted connection 233 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 23:41:10 235 [Warning] Aborted connection 235 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 23:41:10 234 [Warning] Aborted connection 234 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 23:51:12 236 [Warning] Aborted connection 236 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-21 23:52:55 238 [Warning] Aborted connection 238 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 23:52:55 237 [Warning] Aborted connection 237 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 23:53:48 239 [Warning] Aborted connection 239 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 23:53:48 240 [Warning] Aborted connection 240 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 23:54:35 242 [Warning] Aborted connection 242 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 23:54:35 241 [Warning] Aborted connection 241 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 23:56:56 244 [Warning] Aborted connection 244 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-21 23:56:56 243 [Warning] Aborted connection 243 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22  0:07:00 245 [Warning] Aborted connection 245 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-22  0:07:00 246 [Warning] Aborted connection 246 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-22  1:21:15 247 [Warning] Aborted connection 247 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-22  1:21:15 248 [Warning] Aborted connection 248 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-22 15:50:42 252 [Warning] Aborted connection 252 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:50:42 251 [Warning] Aborted connection 251 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:51:31 254 [Warning] Aborted connection 254 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:51:31 253 [Warning] Aborted connection 253 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:51:41 256 [Warning] Aborted connection 256 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:51:41 255 [Warning] Aborted connection 255 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:51:45 257 [Warning] Aborted connection 257 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:51:45 258 [Warning] Aborted connection 258 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:52:03 259 [Warning] Aborted connection 259 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:52:03 260 [Warning] Aborted connection 260 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:53:21 261 [Warning] Aborted connection 261 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:53:21 262 [Warning] Aborted connection 262 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:53:26 264 [Warning] Aborted connection 264 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:53:26 263 [Warning] Aborted connection 263 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:53:29 266 [Warning] Aborted connection 266 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:53:29 265 [Warning] Aborted connection 265 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:54:46 268 [Warning] Aborted connection 268 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:54:46 267 [Warning] Aborted connection 267 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:55:26 270 [Warning] Aborted connection 270 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:55:26 269 [Warning] Aborted connection 269 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:57:53 272 [Warning] Aborted connection 272 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:57:53 271 [Warning] Aborted connection 271 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:58:05 274 [Warning] Aborted connection 274 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:58:05 273 [Warning] Aborted connection 273 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:58:26 275 [Warning] Aborted connection 275 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:58:26 276 [Warning] Aborted connection 276 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:59:20 277 [Warning] Aborted connection 277 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 15:59:20 278 [Warning] Aborted connection 278 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:00:27 280 [Warning] Aborted connection 280 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:00:27 279 [Warning] Aborted connection 279 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:00:35 282 [Warning] Aborted connection 282 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:00:35 281 [Warning] Aborted connection 281 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:00:55 284 [Warning] Aborted connection 284 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:00:55 283 [Warning] Aborted connection 283 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:01:14 286 [Warning] Aborted connection 286 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:01:14 285 [Warning] Aborted connection 285 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:01:55 288 [Warning] Aborted connection 288 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:01:55 287 [Warning] Aborted connection 287 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:05:01 290 [Warning] Aborted connection 290 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:05:01 289 [Warning] Aborted connection 289 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:05:34 291 [Warning] Aborted connection 291 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:05:34 292 [Warning] Aborted connection 292 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:06:04 294 [Warning] Aborted connection 294 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:06:04 293 [Warning] Aborted connection 293 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:06:32 296 [Warning] Aborted connection 296 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:06:32 295 [Warning] Aborted connection 295 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:06:41 298 [Warning] Aborted connection 298 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:06:41 297 [Warning] Aborted connection 297 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:07:03 300 [Warning] Aborted connection 300 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:07:03 299 [Warning] Aborted connection 299 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:07:08 302 [Warning] Aborted connection 302 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:07:08 301 [Warning] Aborted connection 301 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:08:35 304 [Warning] Aborted connection 304 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:08:35 303 [Warning] Aborted connection 303 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:08:50 306 [Warning] Aborted connection 306 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:08:50 305 [Warning] Aborted connection 305 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:09:11 308 [Warning] Aborted connection 308 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:09:11 307 [Warning] Aborted connection 307 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:13:27 310 [Warning] Aborted connection 310 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:13:27 309 [Warning] Aborted connection 309 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:23:28 311 [Warning] Aborted connection 311 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-22 16:23:28 312 [Warning] Aborted connection 312 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-22 16:43:45 314 [Warning] Aborted connection 314 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:43:45 313 [Warning] Aborted connection 313 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:44:47 315 [Warning] Aborted connection 315 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:44:47 316 [Warning] Aborted connection 316 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:45:38 317 [Warning] Aborted connection 317 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:45:38 318 [Warning] Aborted connection 318 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:46:40 319 [Warning] Aborted connection 319 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:46:40 320 [Warning] Aborted connection 320 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:54:50 322 [Warning] Aborted connection 322 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:54:50 321 [Warning] Aborted connection 321 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:55:50 323 [Warning] Aborted connection 323 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:55:50 324 [Warning] Aborted connection 324 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:56:45 326 [Warning] Aborted connection 326 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:56:45 325 [Warning] Aborted connection 325 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:59:57 327 [Warning] Aborted connection 327 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 16:59:57 328 [Warning] Aborted connection 328 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:00:27 330 [Warning] Aborted connection 330 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:00:27 329 [Warning] Aborted connection 329 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:00:39 332 [Warning] Aborted connection 332 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:00:39 331 [Warning] Aborted connection 331 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:01:16 334 [Warning] Aborted connection 334 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:01:16 333 [Warning] Aborted connection 333 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:04:17 336 [Warning] Aborted connection 336 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:04:17 335 [Warning] Aborted connection 335 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:08:57 337 [Warning] Aborted connection 337 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:08:57 338 [Warning] Aborted connection 338 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:09:08 340 [Warning] Aborted connection 340 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:09:08 339 [Warning] Aborted connection 339 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:09:18 342 [Warning] Aborted connection 342 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:09:18 341 [Warning] Aborted connection 341 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:10:32 343 [Warning] Aborted connection 343 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:10:32 344 [Warning] Aborted connection 344 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:16:09 346 [Warning] Aborted connection 346 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:16:09 345 [Warning] Aborted connection 345 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:18:19 348 [Warning] Aborted connection 348 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:18:19 347 [Warning] Aborted connection 347 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:19:01 349 [Warning] Aborted connection 349 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:19:01 350 [Warning] Aborted connection 350 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:21:08 352 [Warning] Aborted connection 352 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:21:08 351 [Warning] Aborted connection 351 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:22:07 354 [Warning] Aborted connection 354 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:22:07 353 [Warning] Aborted connection 353 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:23:16 356 [Warning] Aborted connection 356 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:23:16 355 [Warning] Aborted connection 355 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:33:17 357 [Warning] Aborted connection 357 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-22 17:38:41 358 [Warning] Aborted connection 358 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-22 17:53:55 360 [Warning] Aborted connection 360 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:53:55 359 [Warning] Aborted connection 359 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:55:25 362 [Warning] Aborted connection 362 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:55:25 361 [Warning] Aborted connection 361 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:55:27 364 [Warning] Aborted connection 364 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:55:27 363 [Warning] Aborted connection 363 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:56:39 366 [Warning] Aborted connection 366 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 17:56:39 365 [Warning] Aborted connection 365 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 18:44:34 368 [Warning] Aborted connection 368 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 18:44:34 367 [Warning] Aborted connection 367 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 18:52:09 370 [Warning] Aborted connection 370 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 18:52:09 369 [Warning] Aborted connection 369 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 19:02:11 371 [Warning] Aborted connection 371 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-22 19:02:12 372 [Warning] Aborted connection 372 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-22 19:28:08 374 [Warning] Aborted connection 374 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 19:28:08 373 [Warning] Aborted connection 373 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 19:28:45 376 [Warning] Aborted connection 376 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 19:28:45 375 [Warning] Aborted connection 375 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 19:37:13 378 [Warning] Aborted connection 378 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 19:37:13 377 [Warning] Aborted connection 377 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 19:43:02 380 [Warning] Aborted connection 380 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 19:43:02 379 [Warning] Aborted connection 379 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 19:51:21 382 [Warning] Aborted connection 382 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 19:51:21 381 [Warning] Aborted connection 381 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got an error reading communication packets)
+2022-05-22 20:01:24 383 [Warning] Aborted connection 383 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-22 20:02:02 384 [Warning] Aborted connection 384 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-22 22:59:38 385 [Warning] Aborted connection 385 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-22 23:10:28 386 [Warning] Aborted connection 386 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-22 23:54:58 387 [Warning] Aborted connection 387 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-23 17:31:22 388 [Warning] Aborted connection 388 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-23 17:31:22 389 [Warning] Aborted connection 389 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-23 17:35:49 0 [Note] /usr/bin/mariadbd (initiated by: unknown): Normal shutdown
+2022-05-23 17:35:49 0 [Note] Event Scheduler: Purging the queue. 0 events
+2022-05-23 17:35:49 0 [Note] InnoDB: FTS optimize thread exiting.
+2022-05-23 17:35:49 0 [Note] InnoDB: Starting shutdown...
+2022-05-23 17:35:49 0 [Note] InnoDB: Dumping buffer pool(s) to /config/databases/ib_buffer_pool
+2022-05-23 17:35:49 0 [Note] InnoDB: Buffer pool(s) dump completed at 220523 17:35:49
+2022-05-23 17:35:50 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2022-05-23 17:35:50 0 [Note] InnoDB: Shutdown completed; log sequence number 141080893; transaction id 5986
+2022-05-23 17:35:50 0 [Note] /usr/bin/mariadbd: Shutdown complete
+
+220523 17:35:50 mysqld_safe mysqld from pid file /var/run/mysqld/mysqld.pid ended
+220523 17:36:24 mysqld_safe Starting mariadbd daemon with databases from /config/databases
+2022-05-23 17:36:24 0 [Note] /usr/bin/mariadbd (mysqld 10.5.15-MariaDB-log) starting as process 522 ...
+2022-05-23 17:36:24 0 [Note] InnoDB: Uses event mutexes
+2022-05-23 17:36:24 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2022-05-23 17:36:24 0 [Note] InnoDB: Number of pools: 1
+2022-05-23 17:36:24 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2022-05-23 17:36:24 0 [Note] mariadbd: O_TMPFILE is not supported on /var/tmp (disabling future attempts)
+2022-05-23 17:36:24 0 [Note] InnoDB: Using Linux native AIO
+2022-05-23 17:36:24 0 [Note] InnoDB: Initializing buffer pool, total size = 268435456, chunk size = 134217728
+2022-05-23 17:36:24 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-05-23 17:36:24 0 [Note] InnoDB: 128 rollback segments are active.
+2022-05-23 17:36:24 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2022-05-23 17:36:24 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2022-05-23 17:36:24 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2022-05-23 17:36:24 0 [Note] InnoDB: 10.5.15 started; log sequence number 141080893; transaction id 5987
+2022-05-23 17:36:24 0 [Note] Plugin 'FEEDBACK' is disabled.
+2022-05-23 17:36:24 0 [Note] InnoDB: Loading buffer pool(s) from /config/databases/ib_buffer_pool
+2022-05-23 17:36:24 0 [Note] InnoDB: Buffer pool(s) load completed at 220523 17:36:24
+2022-05-23 17:36:24 0 [Note] Server socket created on IP: '::'.
+2022-05-23 17:36:24 0 [Note] Reading of all Master_info entries succeeded
+2022-05-23 17:36:24 0 [Note] Added new Master_info '' to hash table
+2022-05-23 17:36:24 0 [Note] /usr/bin/mariadbd: ready for connections.
+Version: '10.5.15-MariaDB-log'  socket: '/run/mysqld/mysqld.sock'  port: 3306  MariaDB Server
+2022-05-23 17:47:00 4 [Warning] Aborted connection 4 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-23 17:47:00 5 [Warning] Aborted connection 5 to db: 'drakars' user: 'drakars_user' host: 'drakar-api.caronte_cars_default' (Got timeout reading communication packets)
+2022-05-23 17:52:47 0 [Note] /usr/bin/mariadbd (initiated by: unknown): Normal shutdown
+2022-05-23 17:52:47 0 [Note] Event Scheduler: Purging the queue. 0 events
+2022-05-23 17:52:47 0 [Note] InnoDB: FTS optimize thread exiting.
+2022-05-23 17:52:47 0 [Note] InnoDB: Starting shutdown...
+2022-05-23 17:52:47 0 [Note] InnoDB: Dumping buffer pool(s) to /config/databases/ib_buffer_pool
+2022-05-23 17:52:47 0 [Note] InnoDB: Buffer pool(s) dump completed at 220523 17:52:47
+2022-05-23 17:52:48 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2022-05-23 17:52:48 0 [Note] InnoDB: Shutdown completed; log sequence number 141080905; transaction id 5998
+2022-05-23 17:52:48 0 [Note] /usr/bin/mariadbd: Shutdown complete
+
+220523 17:52:48 mysqld_safe mysqld from pid file /var/run/mysqld/mysqld.pid ended
